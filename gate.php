@@ -9,7 +9,7 @@ $country = $_GET['country'];
 
 
 
-$data = base64_decode("chatid");
+$data = "chatid";
 
 
 
